@@ -5,8 +5,6 @@ exports.homepage = async (req, res) => {
         description: "Save your Notes. Developed using Express and MongoDB."
     }
 
-    console.log(req.session);
-
     if (req.session.passport && req.session.passport.user) {
         res.redirect("/dashboard");
     } else {
