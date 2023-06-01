@@ -11,7 +11,7 @@
 
     <div class="row justify-content-center">
         <% if(notes.length > 0) { for(var i=0; i<notes.length; i++) { %>
-            <div class="col-sm-3 mb-4 me-4">
+            <div class="col-sm-3 mb-4 ms-4 me-4">
                 <div class="card border-primary" style="min-height: 210px;">
                     <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
                         <h5 class="card-title"><%- notes[i].title %></h5>
